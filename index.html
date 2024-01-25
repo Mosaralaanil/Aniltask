@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>day selection </title>
+</head>
+<body>
+    <div class="warpper"> 
+        <div> class containear-calender
+            <div id= "left" >
+                <h1>Dynamic calender</h1>
+                <div id="Event-Section">
+                    <h3>Add Event</h3>
+                    <input type="date" id="eventdate">
+                    <input type="text"
+                    id="eventTitle"
+                    placeholder="eventTitle">
+                    <input type="text"
+                    id="event Description"
+                    placeholder="Event Description">
+                <button id="addEvent" onclick="addEven()">
+                    Add
+                </button>
+                </div>
+                <div id="reminder-selection">
+                    <h3>Reminder</h3>
+                    <ul id="reminder list">
+                        <li> <data-event-id="1">
+                            <strong>eventTitle</strong>
+                            <button class="deleteEvent(1)">
+                                delete
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div id="right">
+                    <h3 id=" monthAndYear"></h3>
+                    <div class="button-container-calender">
+                        <button id="previos"
+                                onclick="previos()">
+                            </button>
+            
+                <button id="next"
+                  onclick="next()">
+                </button>
+                </div>
+                <table class="table-calender"
+                        id="calender"
+                        data-land="en">
+                    </table>
+                 <thead id="thead-month"> </thead>
+                <tbody id="calender body"></tbody>
+            </table>
+            <div class="footer-container-calender">
+                <label1 for="month">Jump To: </label1>
+                <select id="month" onchange="jump()">
+                    <option value="0">jan</option>
+                    <option value="1">feb</option>
+                    <option value="2">mar</option>
+                    <option value="3">Apr</option>
+                    <option value="4">may</option>
+                    <option value="5">jun</option>
+                    <option value="6">july</option>
+                    <option value="7">Aug</option>
+                    <option value="8">Sep</option>
+                    <option value="9">oct</option>
+                    <option value="10">nov</option>
+                    <option value="11">dec</option>  
+                </select>
+                <select> id="year" onchange= "jump()"</select>
+            </div>
+        </div>
+        </div>
+        </div>
+        <script src= script.js></script>
+      
+
+            
